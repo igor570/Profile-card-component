@@ -1,0 +1,123 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
+
+.cardParent {
+    display: flex;
+    height: 100vh;
+}
+
+.mainCard {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+
+}
+
+.pattern {
+    position: relative;
+    width: 450px;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 1;
+
+}
+
+
+.userImage {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 175px;
+    top: -55px;
+    border-radius: 100px;
+    z-index: 2;
+    outline: white 5px solid;
+
+}
+
+.userData {
+    margin-top: -35px;
+    text-align: center;
+    line-height: 3;
+}
+
+.userName {
+    display: inline;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.userAge {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+}
+
+.userCountry{
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(227, 10%, 46%);
+
+}
+
+.socialData{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sd1{
+    text-align: center;
+}
+
+.sd2 {
+    text-align: center;
+}
+
+.sd3 {
+    text-align: center;
+}
+
+.socialNumber {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 18px;
+}
+.tag {
+    margin-top: 10px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* This is completely broken and I dont know how to make it dynamic */
+
+.bottomCircle {
+    position: absolute;
+    transform: translate(-25rem, -25rem) rotate(165deg);
+    height: 1500px;
+    width: 1500px;
+    z-index: -1;
+
+}
+
+.topCircle {
+    position: absolute;
+    transform: translate(85rem, 25rem) rotate(165deg);
+    height: 1500px;
+    width: 1500px;
+    z-index: -2;
+
+}
